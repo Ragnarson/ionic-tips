@@ -1,0 +1,8 @@
+{
+  "name": "sample_app",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "annotate",
+    "watch"
+  ]
+}
