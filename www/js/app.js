@@ -150,13 +150,13 @@ angular.module('app')
   var api_host = window['Settings'].API_HOST;
   return {
     get: function(uri, opts) {
-      return $http.get(api_host + uri, _.merge(default_opts, (opts || {})));
+      return $http.get(api_host + uri, _.merge({}, default_opts, (opts || {})));
     },
     put: function(uri, params, opts) {
-      return $http.put(api_host + uri, params, _.merge(default_opts, (opts || {})));
+      return $http.put(api_host + uri, params, _.merge({}, default_opts, (opts || {})));
     },
     post: function(uri, params, opts) {
-      return $http.post(api_host + uri, params, _.merge(default_opts, (opts || {})));
+      return $http.post(api_host + uri, params, _.merge({}, default_opts, (opts || {})));
     }
   };
 }]);
